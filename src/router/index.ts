@@ -58,6 +58,11 @@ const routes: Array<RouteConfig> = [
         path: '/advert-space',
         name: 'advert-space',
         component: () => import(/* webpackChunkName: 'advert-space' */ '@/views/advert-space/index.vue')
+      },
+      {
+        path: '/menu/create',
+        name: 'menu-create',
+        component: () => import(/* webpackChunkName: 'menu-create' */ '@/views/menu/create.vue')
       }
     ]
   },
@@ -78,9 +83,9 @@ const router = new VueRouter({
 // from:从哪里来的路由信息
 // next:通行的标志
 router.beforeEach((to, from, next) => {
-  // console.log('come in beforeEach')
-  // console.log('to =>', to)
-  // console.log('from =>', from)
+  console.log('come in beforeEach')
+  console.log('to =>', to)
+  console.log('from =>', from)
   // 路由守卫中一定要调用next,否则页面无法访问
   // next()
   // if (to.path !== '/login') {
