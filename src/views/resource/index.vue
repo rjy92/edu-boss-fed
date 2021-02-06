@@ -1,13 +1,24 @@
 <template>
-  <div class="resource">资源管理</div>
+  <div class="resource">
+    <resource-list />
+  </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import ResourceList from './components/List.vue'
 
 export default Vue.extend({
-  name: 'ResourceIndex'
+  name: 'ResourceIndex',
+  components: {
+    ResourceList
+  }
 })
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.card-button .el-button {
+  float:right;
+  margin-right: 15px
+}
+</style>

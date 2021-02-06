@@ -51,7 +51,7 @@ let isRefreshing = false // 刷新token状态
 let requests: any [] = []// 刷新token状态期间被挂起的请求
 
 request.interceptors.response.use(function (response) { // 当状态码为2xx，都会进去这里
-  console.log('请求响应成功', response)
+  // console.log('请求响应成功', response)
   // 如果是自定义错误状态码，错误处理就写到这里
   return response
 }, async function (error) { // 超出2xx，都执行这里
