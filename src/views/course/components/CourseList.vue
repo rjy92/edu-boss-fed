@@ -81,9 +81,15 @@
           label="操作"
           align="center"
           min-width="150">
-          <template>
+          <template slot-scope="scope">
           <el-button
             size="mini"
+            @click="$router.push({
+              name:'course-edit',
+              params:{
+                courseId:scope.row.id
+              }
+            })"
           >编辑</el-button>
           <el-button
             size="mini"
