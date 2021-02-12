@@ -188,8 +188,6 @@ export default Vue.extend({
       this.loadResources()
     },
     handleEdit (item: any) {
-      debugger
-      console.log(item)
       this.dialogFormVisible = true
       this.dialogform = item
       console.log('come in handleEdit')

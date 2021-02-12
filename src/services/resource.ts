@@ -49,3 +49,21 @@ export const getAllResourcesCateGory = (resourceId: string | number = -1) => {
     }
   })
 }
+
+export const allocateRoleResources = (data: any) => {
+  return request({
+    method: 'POST',
+    url: '/boss/resource/allocateRoleResources',
+    data
+  })
+}
+
+export const getRoleResources = (roleId: string | number) => {
+  return request({
+    method: 'GET',
+    url: '/boss/resource/getRoleResources',
+    params: {
+      roleId
+    }
+  })
+}
