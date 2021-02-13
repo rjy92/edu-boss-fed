@@ -68,8 +68,8 @@
               v-model="scope.row.status"
               active-color="#13ce66"
               inactive-color="#ff4949"
-              active-value="1"
-              inactive-value="0"
+              :active-value="1"
+              :inactive-value="0"
               :disabled = "scope.row.isStatusLoading"
               @change="onStateChange(scope.row)"
             >
@@ -93,6 +93,12 @@
           >编辑</el-button>
           <el-button
             size="mini"
+            @click="$router.push({
+              name:'course-section',
+              params:{
+                courseId:scope.row.id
+              }
+            })"
           >内容管理</el-button>
         </template>
         </el-table-column>
