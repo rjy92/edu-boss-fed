@@ -53,7 +53,7 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         script: |
-          cd /usr/edu-boss
+          cd /data/edu-boss
           # wget https://github.com/rjy92/edu-boss-fed.git -O release.tgz
           # https://github.com/rjy92/edu-boss-fed/releases/tag/v0.1.1
           wget https://github.com/rjy92/edu-boss-fed/releases/latest/download/release.tgz -O release.tgz
