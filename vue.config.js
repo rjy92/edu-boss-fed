@@ -11,11 +11,10 @@ module.exports = {
       scss: {
         prependData: '@import "~@/styles/variables.scss";'
       }
-
     }
   },
   devServer: {
-    //此代理仅针对本地开发服务(npm run serve)
+    // 此代理仅针对本地开发服务(npm run serve)
     proxy: {
       '/boss': {
         target: 'http://eduboss.lagou.com',
