@@ -1,6 +1,6 @@
 module.exports = {
   outputDir: 'dist',
-  publicPath: process.env.NODE_ENV === 'production' ? '/github的仓库名称' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? 'edu-boss-fed' : '/',
   css: {
     loaderOptions: {
       // 默认情况下 `sass` 选项会同时对 `sass` 和 `scss` 语法同时生效
